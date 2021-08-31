@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel='shortcut icon' href='asset/images/ArmaCQC.png' type='image/x-icon'>
+  <link rel="stylesheet" href="asset/css/all.min.css">
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+
+  <!-- === header section start === -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark py-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="asset/images/ArmaCQC.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leaderboard.html">LEADERBOARDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DONATE</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <input class="form-control me-2 search-input" type="search" placeholder="Search Profile..." aria-label="Search">
+            <a class="btn btn-success login-btn text-nowrap" href="#" type="button"><i class="fab fa-steam"></i> Login with Steam</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ===//end of header section === -->
+ 
+
+  <!-- === home section start === -->
+  <section class="homepage">
+    <div class="container">
+      <div class="home-text">
+        <h1>Arma<span>CQC</span></h1>
+        <p>Welcome to ArmaCQC!
+         Join our discord <a target="blank" href="https://discordapp.com">here.</a>
+        </p>
+      </div>
+
+      <!-- service start -->
+      <div class="service">
+        <h3 class="title">Servers</h3>
+        <script type="application/javascript">window.addEventListener('message',function(e){if(e.data.uid&&e.data.type==='sizeUpdate'){var i = document.querySelector('iframe[name="'+e.data.uid+'"]');i.style.width = e.data.payload.width;i.style.height = e.data.payload.height;}});</script>
+        <div class="text-center">
+          <iframe src="https://cdn.battlemetrics.com/b/horizontal500x80px/4977859.html?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700" frameborder=0 style="border:0" name="bmjzv"></iframe>
+        </div>
+
+        <div class="text-center">
+          <script type="application/javascript">window.addEventListener('message',function(e){if(e.data.uid&&e.data.type==='sizeUpdate'){var i = document.querySelector('.iframe-2[name="'+e.data.uid+'"]');i.style.width = e.data.payload.width;i.style.height = e.data.payload.height;}});</script>
+          <iframe class="iframe-2" src="https://cdn.battlemetrics.com/b/horizontal500x80px/4977859.html?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700" frameborder=0 style="border:0" name="bmjzv"></iframe>
+        </div>
+      </div>
+      <!-- service end -->
+    </div>
+  </section>
+  <!-- ===//end of home section === -->
+
+
+
+  <script src="asset/js/bootstrap.min.js"></script>
+</body>
+</html>

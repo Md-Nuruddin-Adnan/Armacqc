@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel='shortcut icon' href='asset/images/ArmaCQC.png' type='image/x-icon'>
+  <link rel="stylesheet" href="asset/css/all.min.css">
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+
+  <!-- === header section start === -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark py-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="asset/images/ArmaCQC.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="leaderboard.html">LEADERBOARDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DONATE</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <input class="form-control me-2 search-input" type="search" placeholder="Search Profile..." aria-label="Search">
+            <a class="btn btn-success login-btn text-nowrap" href="#" type="button"><i class="fab fa-steam"></i> Login with Steam</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ===//end of header section === -->
+ 
+
+  <!-- === leaderboard section start === -->
+  <section class="leaderboard mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 m-auto">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h3 class="title">Most Kills Leaderboard</h3>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-primary dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  MOST KILLS
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 3</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 4</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-body table-responsive px-0">
+              <table class="table table-borderless table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Kills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="gradient-yellow">
+                    <td class="text-lg">1</td>
+                    <td>
+                      username1
+                      <span class="badge bg-danger"><i class="fas fa-user-shield"></i></span>
+                      <span class="badge bg-info"><i class="fas fa-code"></i></span>
+                      <span class="badge bg-success">DONOR</span>
+                      <span class="badge bg-purple">SUB</span>
+                    </td>
+                    <td>1,100</td>
+                  </tr>
+                  <tr class="gradient-gray">
+                    <td class="text-lg">2</td>
+                    <td>username2</td>
+                    <td>955</td>
+                  </tr>
+                  <tr class="gradient-brown">
+                    <td class="text-lg">3</td>
+                    <td>username3</td>
+                    <td>901</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>username4</td>
+                    <td>98</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>username5</td>
+                    <td>51</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>username6</td>
+                    <td>51</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-footer position-relative text-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="timer">
+                <i class="far fa-clock"></i> 30:05
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===//end of leaderboard section === -->
+
+
+
+  <script src="asset/js/bootstrap.min.js"></script>
+</body>
+</html>

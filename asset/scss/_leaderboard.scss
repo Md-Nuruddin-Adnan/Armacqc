@@ -1,0 +1,149 @@
+.leaderboard {
+    margin-top: 20px;
+    .card {
+        border: 1px solid #696969;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: $dark;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
+        padding: 10px 0;
+
+        .card-header {
+            background-color: $dark;
+            border-bottom: 0;
+
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            .dropdown {
+                .btn-primary {
+                    font-size: 14px;
+                    font-weight: 600;
+                    background: #0072ff; 
+                }
+            }
+        }
+
+        .card-body{
+            padding-bottom: 0;
+            .table {
+                thead {
+                    tr {
+                        background: #4b4b4b;
+                    }
+                }
+                th, td {
+                    font-weight: 600;
+
+                    .badge{
+                        border-radius: 7px;
+                        font-size: 11px;
+
+                        &.bg-danger {
+                            background-color: #9a0000  !important;
+                        }
+                        &.bg-info{
+                            background-color: #00a6ff  !important;
+                        }
+                        &.bg-success{
+                            background-color: #00ff00  !important;
+                        }
+                        &.bg-purple{
+                            background-color: #9d00c8  !important;
+                        }
+                    }
+                      
+                }
+
+                &>:not(caption)>*>*{
+                    padding: 0.8rem 0.8rem;
+                }
+
+                &.table-dark {
+                    --bs-table-bg: $dark;
+                    --bs-table-striped-bg: #4b4b4b;
+                }
+
+                &.table-striped>tbody>tr:nth-of-type(odd) {
+                    --bs-table-accent-bg: transparent;
+                    color: var(--bs-table-striped-color);
+                }
+                &.table-striped>tbody>tr:nth-of-type(even) {
+                    --bs-table-accent-bg: var(--bs-table-striped-bg);
+                    color: var(--bs-table-striped-color);
+                }
+            }
+        }
+
+        .card-footer {
+            background-color: $dark;
+            border-top: 0;
+
+            nav {
+                display: inline-block;
+                border-radius: 50px;
+                overflow: hidden;
+                border: 1px solid #696969;
+                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
+
+                .pagination {
+                    padding: 5px;
+                }
+                .page-item .page-link {
+                    background-color: transparent;
+                    color: #fff;
+                    border-color: transparent;
+                }
+                .page-item.disabled .page-link {
+                    background-color: transparent;
+                }
+                .page-item.active .page-link {
+                    background-color: #0084ff;
+                    border-radius: 10px;
+                    border-color: #696969;
+                    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
+                }
+                .page-item .page-link:hover,
+                .page-item .page-link:focus {
+                    color: rgba(#fff, 0.8);
+                }
+                .pagination-sm .page-link {
+                    padding: .15rem .5rem;
+                    font-weight: 600;
+                }
+            }
+
+            .timer {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                z-index: 1;
+                color: #fff;
+                font-weight: 600;
+                font-size: 12px;
+            }
+              
+        }
+      }
+
+      .gradient-yellow {
+          background-image: linear-gradient(90deg, #ffbb00, transparent 70%) !important;
+      }
+      .gradient-gray {
+        background: linear-gradient(90deg, #9c9c9c, #4b4b4b 55%) !important;
+        --bs-table-accent-bg: transparent !important;
+      }
+      .gradient-brown {
+          background-image: linear-gradient(90deg, #663000, transparent 45%) !important;
+      }
+
+      .text-lg {
+          font-size: 120%;
+      }
+
+      
+}

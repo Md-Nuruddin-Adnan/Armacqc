@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'eurostile-regular';
+  src: url(../fonts/Eurostile.ttf);
+}
+
+
+// color
+$dark: #2b2b2b;
+$blue: #0072ff;
+$green: #10af00;
+
+// font
+$primary-font: 'eurostile-regular', sans-serif;
+$secondary-font: Arial, Helvetica, sans-serif;
+
+
+body {
+  font-family: $secondary-font;
+  background: url(../images/bg.png) no-repeat center center/cover;
+  min-height: 100vh;
+}
