@@ -35,12 +35,15 @@
                         background: #4b4b4b;
                     }
                 }
+                
                 th, td {
                     font-weight: 600;
 
                     .badge{
                         border-radius: 7px;
                         font-size: 11px;
+
+                      
 
                         &.bg-danger {
                             background-color: #9a0000  !important;
@@ -56,6 +59,15 @@
                         }
                     }
                       
+                }
+
+                td { 
+                   span { 
+                       display: inline-block;
+                    &:nth-child(1) {
+                        margin-left: 12px;
+                    }
+                   }
                 }
 
                 &>:not(caption)>*>*{

@@ -1,0 +1,41 @@
+.black-card {
+    background: $dark;
+    border-radius: 10px;
+
+    .card-header {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .divider {
+        width: 100%;
+        height: 4px;
+        background-image: linear-gradient(90deg, darken($dark, 5), transparent);
+       
+        &.divider-red {
+            background-image: linear-gradient(90deg, #960000, transparent);
+        }
+        &.divider-green {
+            background-image: linear-gradient(90deg, #00c72a, transparent);
+        }
+        &.divider-blue {
+            background-image: linear-gradient(90deg, #0072ff, transparent);
+        }
+        &.divider-purple {
+            background-image: linear-gradient(90deg, #9000ff, transparent);
+        }
+        &.divider-yellow {
+            background-image: linear-gradient(90deg, #e6dc35, transparent);
+        }
+    }
+    .card-footer {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top: none;
+    }
+}
+
+  
