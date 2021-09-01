@@ -124,15 +124,17 @@ body {
   background: #10af00;
   border: 1px solid #1b8f00;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
-  height: 25px;
-  padding: 0.15rem .75rem;
+  height: 35px;
+  padding: 0 .75rem;
+  line-height: 35px;
 }
 
-.navbar .login-btn i {
-  color: #2b2b2b;
+.navbar .login-btn:hover {
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(27, 143, 0, 0.8);
+          box-shadow: 0px 3px 7px 0px rgba(27, 143, 0, 0.8);
 }
 
 .navbar .dropdown .dropdown-btn {
@@ -253,13 +255,25 @@ body {
   background: #4b4b4b;
 }
 
+.leaderboard .card .card-body .table tbody tr:hover {
+  cursor: pointer;
+}
+
 .leaderboard .card .card-body .table th, .leaderboard .card .card-body .table td {
   font-weight: 600;
+}
+
+.leaderboard .card .card-body .table th:first-child, .leaderboard .card .card-body .table td:first-child {
+  text-align: center;
+  width: 100px;
+  padding-right: 30px;
 }
 
 .leaderboard .card .card-body .table th .badge, .leaderboard .card .card-body .table td .badge {
   border-radius: 7px;
   font-size: 11px;
+  min-height: 20px;
+  line-height: 12px;
 }
 
 .leaderboard .card .card-body .table th .badge.bg-danger, .leaderboard .card .card-body .table td .badge.bg-danger {
@@ -455,6 +469,8 @@ body {
 .user-info .profile .info .badge {
   border-radius: 7px;
   font-size: 11px;
+  min-height: 20px;
+  line-height: 12px;
 }
 
 .user-info .profile .info .badge.bg-danger {
@@ -481,6 +497,14 @@ body {
   margin-top: 5px;
 }
 
+.user-info .profile .info .user-info-footer a {
+  color: inherit;
+}
+
+.user-info .profile .info .user-info-footer a:hover {
+  color: #0072ff;
+}
+
 .user-info .profile .level {
   padding-top: 20px;
 }
@@ -497,6 +521,7 @@ body {
   color: #818181;
   font-weight: 700;
   text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+  bottom: 0;
 }
 
 .user-info .profile .level .progress {
@@ -506,10 +531,43 @@ body {
   -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
   margin: 5px 0 3px 0;
+  background-color: #E5E5E5;
 }
 
 .user-info .profile .level .progress .progress-bar {
-  background: #0072ff;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #1a4cab), to(#11bcba));
+  background-image: linear-gradient(90deg, #1a4cab 60%, #11bcba);
+  -webkit-animation-name: animateBar;
+          animation-name: animateBar;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+}
+
+@-webkit-keyframes animateBar {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animateBar {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .user-info .profile .level .level-footer {
@@ -522,6 +580,8 @@ body {
 .black-card {
   background: #2b2b2b;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
 }
 
 .black-card .card-header {
@@ -628,7 +688,7 @@ body {
 
 .widget.card-box .icon {
   font-size: 55px;
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .card-box-parent {

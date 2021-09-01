@@ -35,15 +35,29 @@
                         background: #4b4b4b;
                     }
                 }
+
+                tbody {
+                    tr {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
                 
                 th, td {
                     font-weight: 600;
+                    &:first-child{
+                        text-align: center;
+                        width: 100px;
+                        padding-right: 30px;
+                    }
 
                     .badge{
                         border-radius: 7px;
                         font-size: 11px;
+                        min-height: 20px;
+                        line-height: 12px;
 
-                      
 
                         &.bg-danger {
                             background-color: #9a0000  !important;

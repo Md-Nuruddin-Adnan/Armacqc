@@ -32,6 +32,8 @@
             .badge{
                 border-radius: 7px;
                 font-size: 11px;
+                min-height: 20px;
+                line-height: 12px;
 
                 &.bg-danger {
                     background-color: #9a0000  !important;
@@ -53,6 +55,13 @@
                 color: #969696;
                 text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
                 margin-top: 5px;
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
             }
         }
 
@@ -69,6 +78,7 @@
                     color: #818181;
                     font-weight: 700;
                     text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3); 
+                    bottom: 0;
                 }
             }
 
@@ -78,9 +88,20 @@
                 min-width: 250px;
                 box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
                 margin: 5px 0 3px 0;
+                background-color: #E5E5E5;
 
                 .progress-bar{
-                    background: $blue;
+                    background-color: transparent;
+                    background-image:linear-gradient(90deg, #1a4cab 60%, #11bcba);
+                    animation-name: animateBar;
+                    animation-iteration-count: 1;
+                    animation-timing-function: ease-in;
+                    animation-duration: .8s;
+                }
+
+                @keyframes animateBar {
+                    0% {transform: translateX(-100%);}
+                    100% {transform: translateX(0);}
                 }
             }
 

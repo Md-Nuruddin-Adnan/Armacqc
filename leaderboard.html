@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home</title>
+  <title>Leaderboard</title>
   <link rel='shortcut icon' href='asset/images/ArmaCQC.png' type='image/x-icon'>
   <link rel="stylesheet" href="asset/css/all.min.css">
   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
@@ -38,7 +38,7 @@
             <div class="form-controler-wrapper">
               <input class="form-control  search-input" type="search" placeholder="Search Profile..." aria-label="Search">
             </div>
-            <a class="btn btn-success login-btn text-nowrap" href="#"><i class="fab fa-steam"></i> Login with Steam</a>
+            <a class="btn btn-success login-btn text-nowrap" href="#"><i class="fab fa-steam"></i> Sign in with Steam</a>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="gradient-yellow">
+                  <tr class='clickable-row' data-href='#' class="gradient-yellow">
                     <td class="text-lg">1</td>
                     <td>
                       username1
@@ -88,27 +88,27 @@
                     </td>
                     <td>1,100</td>
                   </tr>
-                  <tr class="gradient-gray">
+                  <tr class='clickable-row' data-href='#' class="gradient-gray">
                     <td class="text-lg">2</td>
                     <td>username2</td>
                     <td>955</td>
                   </tr>
-                  <tr class="gradient-brown">
+                  <tr class='clickable-row' data-href='#' class="gradient-brown">
                     <td class="text-lg">3</td>
                     <td>username3</td>
                     <td>901</td>
                   </tr>
-                  <tr>
+                  <tr class='clickable-row' data-href='#'>
                     <td>4</td>
                     <td>username4</td>
                     <td>98</td>
                   </tr>
-                  <tr>
+                  <tr class='clickable-row' data-href='#'>
                     <td>5</td>
                     <td>username5</td>
                     <td>51</td>
                   </tr>
-                  <tr>
+                  <tr class='clickable-row' data-href='#'>
                     <td>6</td>
                     <td>username6</td>
                     <td>51</td>
@@ -144,6 +144,14 @@
 
 
 
+  <script src="asset/js/jquery-3.6.0.slim.min.js"></script>
   <script src="asset/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+  </script>
 </body>
 </html>
