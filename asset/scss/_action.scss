@@ -1,0 +1,70 @@
+@mixin text-style {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.action {
+    .title {
+        @include text-style;
+        margin-bottom: 10px;
+    }
+    .btn {
+        @include text-style;
+        margin-right: 10px;
+        min-width: 100px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
+        border: 1px solid #696969;
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 30px;
+        line-height: 30px;
+
+        &.btn-danger {
+            background: #8e0000;
+            &:hover {
+                box-shadow: 0px 3px 7px 0px rgba(#8e0000, 0.8);
+            }
+        }
+        &.btn-warning {
+            background: #ffa200;
+            &:hover {
+                box-shadow: 0px 3px 7px 0px rgba(#ffa200, 0.8);
+            }
+        }
+        &.btn-info {
+            background: #00aeff;
+            &:hover {
+                box-shadow: 0px 3px 7px 0px rgba(#00aeff, 0.8);
+            }
+        }
+    }
+
+    .form-controler-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+        grid-gap: 10px;
+        margin: 20px 0;
+
+        label {
+            @include text-style;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            @include text-style;
+            text-align: center;
+            background: transparent;
+            border: 1px solid #696969;
+            border-radius: 25px;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+  
+      
+}

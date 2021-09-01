@@ -66,10 +66,10 @@
                             background-color: #00a6ff  !important;
                         }
                         &.bg-success{
-                            background-color: #00ff00  !important;
+                            background: linear-gradient(90deg, #00ff00, darken(#00ff00, 10));
                         }
                         &.bg-purple{
-                            background-color: #9d00c8  !important;
+                            background: linear-gradient(90deg, #9d00c8, darken(#9d00c8, 10));
                         }
                     }
                       

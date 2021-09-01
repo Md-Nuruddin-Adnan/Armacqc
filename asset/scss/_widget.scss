@@ -6,25 +6,40 @@
         box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 68px;
-        // &. {
-        //     min-height: 196px;
-        // }
+        transition: all 0.2s linear;
+
+        &:hover {
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.8);
+        }
 
         &.card-box-red {
             background: #8f0000;
             border-color: #640000;
+
+            &:hover {
+                box-shadow: 0px 3px 10px 0px rgba(#8f0000, 0.7);
+            }
         }
         &.card-box-green {
             background: #00c72a;
             border-color: #2ccf00;
+            &:hover {
+                box-shadow: 0px 3px 10px 0px rgba(#00c72a, 0.7);
+            }
         }
         &.card-box-blue {
             background: #0072ff;
             border-color: #005286;
+            &:hover {
+                box-shadow: 0px 3px 10px 0px rgba(#0072ff, 0.7);
+            }
         }
         &.card-box-purple {
             background: #9000ff;
             border-color: #7100b9;
+             &:hover {
+                box-shadow: 0px 3px 10px 0px rgba(#9000ff, 0.7);
+            }
         }
 
         .name {
