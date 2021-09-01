@@ -808,6 +808,8 @@ body {
   background: transparent;
   border: 1px solid #696969;
   border-radius: 25px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
 }
 
 .action .form-controler-group .form-control::-webkit-input-placeholder {
